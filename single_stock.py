@@ -2,8 +2,8 @@ import quantstats as qs
 
 stock ="SPY"
 
-portfolio = qs.utils.download_returns(stock, period='3y')
-# print(portfolio.head())
+portfolio = qs.utils.download_returns(stock, period='5y')
+print(portfolio.head())
 
 # print("Available stats:")
 # print([fx for fx in dir(qs.stats) if fx[0] != "_"])

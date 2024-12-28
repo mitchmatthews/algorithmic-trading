@@ -9,7 +9,7 @@ from lumibot.traders import Trader
 class BuyHold(Strategy):
 
     def initialize(self):
-        self.sleeptime = "10S"
+        self.sleeptime = "1S"
 
 
     def on_trading_iteration(self):

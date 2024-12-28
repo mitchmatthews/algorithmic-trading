@@ -7,12 +7,12 @@ from lumibot.traders import Trader
 
 class SwingHigh(Strategy):
     parameters = {
-        "symbol" : "NVDA",
+        "symbol" : "SPY",
         "quantity" : 100
     }
 
     def initialize(self):
-        self.sleeptime = "5S"
+        self.sleeptime = "1S"
         self.vars.data = []
         self.vars.order_number = 0
 
@@ -54,7 +54,7 @@ if __name__ == "__main__":
             PolygonDataBacktesting,
             start,
             end,
-            benchmark_asset = "NVDA"
+            benchmark_asset = "SPY"
         )
     else:    
         strategy = SwingHigh()
